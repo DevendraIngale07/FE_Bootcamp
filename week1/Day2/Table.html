@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tag</title>
+    <style>
+        table, td, tr, th{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        } 
+        .project{
+            background: rgb(181, 22, 22);
+        }
+        .h{
+            background-color:rgb(128, 128, 205);
+        }
+        .m{
+            background-color: blueviolet;
+        }
+        .d{
+            background-color: yellow;
+        }
+        .s{
+            background-color: rgb(210, 85, 85);
+        }
+        .a{
+            background-color: rgb(77, 183, 207);
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        
+        <caption>Time table</caption>
+        
+            <tr>
+                <th class="h" rowspan="6">HOURS</th>
+                <th class="d">Mon</th>
+                <th class="d">Tue</th>
+                <th class="d">Wed</th>
+                <th class="d">Thu</th>
+                <th class="d">Fri</th>
+            </tr>
+        
+   
+        
+       
+            <tr>
+                <td class="m">Math</td>
+                <td class="s">Science</td>
+                <td class="m">Math</td>
+                <td class="s">Science</td>
+                <td class="a">Arts</td>
+            </tr>
+            <tr>
+                <td class="m">Math</td>
+                <td class="s">Science</td>
+                <td class="m">Math</td>
+                <td class="s">Science</td>
+                <td class="a">Arts</td>
+            </tr>
+            <tr>
+                <td colspan="5">Lunch</td>
+                
+                
+            </tr>
+            <tr>
+                <td class="m">Math</td>
+                <td class="s">Science</td>
+                <td class="m">Math</td>
+                <td class="project" colspan="2" rowspan="2" >Project</td>
+                
+            </tr>
+            <tr>
+                <td class="m">Math</td>   
+                <td class="s">Science</td>
+                <td class="m">Math</td>
+                
+            </tr>
+      
+        
+        </tbody>
+    </table> 
+
+ 
+</body>
+</html>
