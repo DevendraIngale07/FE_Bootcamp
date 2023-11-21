@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANU BAR</title>
+    <style>
+        body{
+            min-height: 100vh;
+        }
+        .center1{
+            justify-content: center;
+            display:flex;
+            align-items: center;
+        }
+        .wrapper{
+            position: relative;
+            /* border: 1px solid; */
+            padding: 5px 5px;
+        }
+        .wrapper .manu{
+            position: absolute;
+            flex-direction: column;
+            background: white;
+            box-shadow: 0 0 2px rgba(0,0,0,0.3);
+            top: 30px;
+            transition: .3s all;
+            opacity: 0;
+            pointer-events: none;
+        }
+        .manu span{
+            cursor: pointer;
+            padding: 7px 40px;
+        }
+        .wrapper:hover .manu{
+            top: 30px;
+            opacity: 1;
+            pointer-events: all; 
+        }
+        .manu span:hover{
+            background: rgba(0,0,0,0);
+        }    
+    </style>
+</head>
+<body class="center1"> 
+    <div class="wrapper center1">
+        <button>Click Me</button>
+    
+    <div class="manu center1">
+        <span>MANU1</span><span>MANU2</span><span>MANU3</span><span>MANU4</span>
+    </div>
+</div>
+    
+</body>
+</html>

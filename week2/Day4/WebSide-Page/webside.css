@@ -1,0 +1,44 @@
+/* @media (max-width: 1231px) {
+    .header__title{
+        font-size: 1.5rem;
+    }
+    .header__title,
+    .header__btn {
+        font-size: 0.8rem;
+    } */
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url(./images/bg.jpg);
+    min-height: 100vh;
+}
+.container{
+    width: 250px;
+    background: white;
+    border-radius: 7px;
+    text-align:center;
+    padding: 50px 35px 10px 35px;
+    background: url(./images/bg2.png);
+
+}
+.container header{
+    font-size: 25px;
+    font-weight: 1000;
+    margin: 0 0 30px 0;
+    
+}
+.container .form-outer{
+    width: 100%;
+}
+.regi{
+    width: 100px;
+    background: rgb(186, 179, 179);
+}
+/* } */

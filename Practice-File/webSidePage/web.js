@@ -1,0 +1,1 @@
+let nav_taggle = document.querySelector('nav-link')

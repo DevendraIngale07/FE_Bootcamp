@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRIDS</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .grid_container{
+            width: 500px;
+            height: 300px;
+            border: 1px solid;
+            display: grid;
+            grid-template-columns:repeat(6, 1fr);
+            gap: 10px;
+            max-height: 80%;
+           
+        }
+        .row1{
+            grid-template-columns: auto;
+        }
+        .row .item1{
+            grid-column-start: 1;
+            grid-column-end: 7; 
+            
+        }
+        .row2{
+            grid-template-columns: auto;
+            grid-column-start: 1;
+            grid-column-end: 4; 
+        }
+        /* .item2{
+            grid-column-start: 1;
+            grid-column-end: 4; 
+        }
+        .item3{
+            grid-column-start: 4;
+            grid-column-end: 7; 
+        } */
+        .row3{
+            grid-template-columns: auto;
+            grid-column-start: 1;
+            grid-column-end: 3; 
+        }
+        /* .item4{
+            grid-column-start: 1;
+            grid-column-end: 3; 
+        }
+        .item5{
+            grid-column-start: 3;
+            grid-column-end: 5; 
+        }
+        .item6{
+            grid-column-start: 5;
+            grid-column-end: 7; 
+        } */
+        .grid_item{
+            /* width: 100px;
+            height: 100px; */
+            border: 1px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid_container">
+    <div class="row1">
+        <div class="grid_item item1"><img src="../../../week1/Demo/Img/car1.jpg" alt="">Item1</div>
+        
+    </div>
+    <div class="row2">
+        <div class="grid_item item2">Item2</div>
+        <div class="grid_item item3">Item3</div>
+    </div>
+    <div class="row3">
+        <div class="grid_item item4">Item4</div>
+        <div class="grid_item item5">Item5</div>
+        <div class="grid_item item6">Item6</div>
+    </div>
+
+    </div>
+    
+</body>
+</html>
