@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 300px;
+    margin-left: 100px;
+    margin-top: 50px;
+    border: 2px solid gray;
+    position: relative;
+    border-radius: 5px;
+  }
+  .imgBox {
+    height: auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .viewMore {
+    position: absolute;
+    right: -2px;
+    bottom: -128px;
+    padding: 5px;
+    margin-left: 0;
+    color: white;
+    background: radial-gradient(100% 100% at 100% 0%, #89e5ff 0%, #5468ff 100%);
+    box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%),
+      0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%),
+      inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+    width: 7rem;
+    text-align: center;
+    border-radius: 0.3em;
+    transition: all 2s;
+  }
+  .best {
+    width: 8rem;
+    height: 2rem;
+    position: absolute;
+    top: 10px;
+    color: white;
+    border: 1px solid rgb(149, 62, 62);
+    border-radius: 3px;
+    padding: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(143, 142, 142, 0.15) !important;
+    background: #000000;
+    text-align: center;
+    transition: all 2s;
+    left: -129px;
+    border-radius: 5px;
+  }
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5%;
+    background-color: rgb(74, 74, 123);
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    text-align: center;
+  }
+  p {
+    margin: 10px;
+  }
+  .imgBox:hover .best {
+    left: -2px;
+  }
+  .imgBox:hover .viewMore {
+    bottom: 4px;
+  }
+  

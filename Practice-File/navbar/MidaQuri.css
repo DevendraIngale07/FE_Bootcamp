@@ -1,0 +1,30 @@
+@media screen and (max-width: 730px) {
+    .icon{
+        display: block;
+        cursor: pointer;
+    }
+    .right{
+        position: absolute;
+        background: white;
+        flex-direction: column;
+        /* top: 14%; */
+        width: 100%;
+        left: 0;
+        transition: .2s;
+        padding: 20px 0;
+        box-shadow: 0 0 10px rgba(0 ,0 , 0, 0.2);
+        top: -300px;
+        z-index: -1;
+    }
+    .right.show{
+        top: 15%;
+    }
+    nav{
+        flex-direction: column;
+        gap: 22px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        z-index: 2;
+    }
+}

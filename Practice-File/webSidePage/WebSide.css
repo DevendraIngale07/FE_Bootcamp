@@ -100,23 +100,19 @@ ul {
 }
 .nav-links {
   flex-basis: 730px;
-  /* left: 0;
-  position: absolute;
-  opacity: 1;
-  flex-direction: column; */
 }
 .nav-links ul {
   justify-content: end;
   gap: 40px;
 }
 .nav-taggle {
-  display: none;
+  display:block;
 }
 .main-nav {
   justify-content: space-between;
   margin-top: 20px;
-  position: relative;
 }
+
 /* header */
 .header {
   padding: 50px var(--padding-inline-section);
